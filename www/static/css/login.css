@@ -1,0 +1,140 @@
+html,body{margin:0;padding: 0; width: 100%;height: 100%; font-family:"microsoft yahei";}
+ *{margin:0;padding:0;} 
+a{text-decoration: none;}
+input {outline:none;}
+body{background: #999;}
+.main{
+	width: 400px;
+	height: 360px;
+	margin:auto;
+	background-color: #fff;
+     }
+.register_main{
+	float:left;
+	margin-top:10px;
+	margin-bottom: 10px;
+	width: 350px;
+	margin-left: 25px;
+	margin-right: 25px;
+    }
+.main_01{
+	height: 40px;
+	float: left;
+}
+.main_01 img{
+	width: 40px;
+	height: 40px;
+	float: left;
+}
+.register_left{
+	display:block;
+	height:40px;
+	width:100px;
+	font-size: 20px;
+	line-height: 40px;
+	margin-left:10px;
+	float: left;
+}
+.register_right{
+	display:block
+	height:40px;
+	font-size: 14px;
+	line-height: 40px;
+	float: right;
+}
+.register_right a{color:#366bb3;}
+.main_02{
+	height:38px;
+	line-height:38px;
+	border: 1px solid #dddddd;
+	font-size: 15px;
+}
+.main_02 label{margin-left:25px; }
+.main_02 input{
+	border:none;
+	height: 30px;
+	width:120px;
+	margin-top: 4px;
+	margin-left: 40px;
+	font-size: 15px;
+}
+input:focus{ 
+    border:none;
+}
+.main_code{margin-left:10px;
+	background-color: #fffff2;
+}
+.img_code{
+	width: 75px;
+	height: 30px;
+	float: right;
+	margin-top: 4px;
+	margin-right: 2px;
+}
+.main_03{
+	height:20px;
+	line-height:20px;
+	font-size: 14px;
+	line-height: 20px;
+}
+.into_email{
+	color:#366bb3;
+	display: block;
+	float: right;
+}
+.main_04{
+	height:45px;
+	line-height:45px;
+	font-size: 14px;
+}
+.register_button{
+	display: block;
+	height: 55px;
+	width:350px;
+	line-height: 55px;
+	color: #fff;
+	background-color: #366bb3;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 18px;
+	letter-spacing: 10px;
+}
+
+/*帐号登录*/
+.main_login{
+	float:left;
+	margin-top: 25px;
+	height: 43px;
+	width: 350px;
+	margin-left: 25px;
+	margin-right: 25px;
+	line-height:43px;
+	border: 1px solid #dddddd;
+	font-size: 15px;
+}
+.main_login input{
+	float: left;
+	border:none;
+	height: 30px;
+	width:120px;
+	margin-top: 7px;
+	margin-left: 25px;
+	font-size: 15px;
+}
+.login_go{
+	display: block;
+	float: left;
+	width: 43px;
+	height: 43px;
+	background:#dddddd;
+}
+.login_g1{
+	background-image: url(../images/into_user.png);
+	background-position: center;
+    background-repeat: no-repeat;
+}
+.login_g2{
+	background-image: url(../images/into_code.png);
+	background-position: center;
+    background-repeat: no-repeat;
+}

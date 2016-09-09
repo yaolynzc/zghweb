@@ -1,0 +1,22 @@
+/*店铺中心*/
+.store_title{padding-top: 10px;}
+.store_title h3{height: 40px;line-height: 40px;background: #eee;font-size: 18px;padding-left: 20px;}
+.store_title p{letter-spacing:2px;border:1px dashed #e0e0e0;margin: 20px auto;background: #fafafa;font-size: 12px;line-height: 30px;}
+.tips-icon{ height: 18px;width: 18px;float:left;margin-left:20px;margin-top:5px;background-position: -25px -540px;}
+.view a{color:#3a75c5;}
+/*免费开店*/
+.free_store{margin-top: 20px;border:1px solid #e0e0e0;height: 500px;}
+.free_store h2{height: 40px;font-size: 24px;line-height: 40px;color:#666;padding-left: 20px;}
+.congratulations-icon{ height: 16px;width: 16px;float:left;margin-left:20px;margin-top:5px;background-position: -50px -540px;}
+.free_store p{margin: 20px auto;font-size: 14px;line-height: 30px;color:#669900;}
+.form_store{margin:20px 150px;}
+.form_store h4{color: #3a75c5;font-size: 24px;}
+.location{padding-left: 50px;font-size: 14px;line-height: 50px;}
+.store_table{width: 480px;margin-left: 130px;border-collapse: collapse;font-size: 14px;}
+.border{border:1px solid #b1b1b1;height: 30px;line-height: 30px;}
+.th01{padding-left: 15px;}
+.store_table td{line-height: 30px;color:#717171;}
+.td01{padding-left: 15px;}
+.td03{color: #3a75c5 !important;}
+.nostart-icon{height: 16px;width: 16px;float:left;margin-top:5px;background-position: -70px -540px;}
+.new_store{margin-left: 300px;padding: 10px 20px;background: #858585;color:#fff;border:0;border-radius: 5px;margin-top: 60px;}
