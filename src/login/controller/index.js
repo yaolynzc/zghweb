@@ -9,8 +9,6 @@ export default class extends Base {
    */
   indexAction(){
     //auto render template file index_index.html
-    // this.assign("title","知果汇首页");
     return this.display();
   }
-
 }
