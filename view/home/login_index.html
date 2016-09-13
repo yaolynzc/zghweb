@@ -2,31 +2,33 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>帐号登陆</title>
+<title>{{ title }}</title>
 <link rel="stylesheet" type="text/css" href="/static/css/common.css">
 <link rel="stylesheet" type="text/css" href="/static/css/login.css">
 </head>
 <body>
-	<div class="main">
+	<div class="main" method="post">
 	   <div class="register_main main_01">
 	       <img src="/static/images/logo.jpg">
 	   	   <span class="register_left">登录帐号</span>
 	   </div>
 	   <div class=" main_login">
-	   	   <span class="login_go login_g1"></span><input style="width:220px;" type="text" name="email" placeholder="手机/邮箱/用户名">
+	   	   <span class="login_go login_g1"></span><input style="width:220px;" type="text" name="email" id="email" placeholder="手机/邮箱/用户名">
 	   </div>
 	   <div class="main_login">
-	   	   <span class="login_go login_g2"></span></span><input style="width:220px;" type="text" name="email" placeholder="密码">
+	   	   <span class="login_go login_g2"></span></span><input style="width:220px;" type="text" name="passwd" id="passwd" placeholder="密码">
 	   </div>
 	   <div class="register_main main_03">
 	   	   <input type="checkbox" name="" style="vertical-align:middle">&nbsp;&nbsp;下次自动登录<a href="#" class="into_email">忘记登陆密码</a>
 	   </div>
 	   <div class="register_main main_04">
-	   	 <a href="#" class="register_button">登陆</a>
+	   	 <a href="#" class="register_button" id="loginBtn">登陆</a>
 	   </div>
 	   <div class="register_main main_03">
 	   	   <a href="#" class="into_email">立即注册</a>
 	   </div>
 	</div>
+	<script src="/static/js/widget/jquery/jquery-1.9.1.min.js"></script>
+	<script src="/static/js/business/login/login.js"></script>
 </body>
 </html>
