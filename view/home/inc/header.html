@@ -4,8 +4,8 @@
 	<!-- 顶部状态栏 -->
 	<div class="container topbar clearfix">
 		<div class="l_area clearfix">
-			{% if userinfo %}
-			<p>{{ userinfo.name }}，欢迎！</p>
+			{% if uname %}
+			<p>{{ uname }}，欢迎！</p>
 			<p><span><a href="/login/logout">退出</a></span></p>
 			{% else %}
 			<p>你好，欢迎！</p>

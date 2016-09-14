@@ -12,7 +12,7 @@ $(function(){
                 type:'POST',
                 success:function(json){
                     if(json.status===1){
-                        alert(json.msg);
+                        // alert(json.msg);
                         window.location.href="/";
                     }else {
                         alert(json.msg);

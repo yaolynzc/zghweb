@@ -8,9 +8,13 @@ export default class extends Base {
    * @return {Promise} []
    */
   async indexAction(){
-    //auto render template file index_index.html
-    let uinfo=await this.session("userInfo");
-    this.assign("loginname",uinfo.name);
+
+    //判断用户是否登录
+    let is_login = await this.islogin();
+    // console.log(is_login);
+    if(is_login){
+      this.assign("uname",is_login);
+    }
     return this.display();
   }
 }
