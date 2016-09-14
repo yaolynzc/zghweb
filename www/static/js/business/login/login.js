@@ -5,7 +5,7 @@ $(function(){
             password:$("#passwd").val()
             // __CSRF__:G_csrf
         }
-        alert($("#email").val());
+        
         $.ajax({
                 url:'/home/login/dologin',
                 data:mydata,
