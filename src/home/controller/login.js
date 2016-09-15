@@ -13,10 +13,7 @@ export default class extends Base {
     await this.session("userInfo","");
     return this.redirect("/");
   }
-  //用户重定向
-  async redirectAction(){
-    return this.display();
-  }
+  
   async dologinAction(){
     let data = this.post();
     let md5Pas = await think.md5(data.password);

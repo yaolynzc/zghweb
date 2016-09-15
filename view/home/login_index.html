@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<title>{{ title }}</title>
-<link rel="stylesheet" type="text/css" href="/static/css/common.css">
-<link rel="stylesheet" type="text/css" href="/static/css/login.css">
-</head>
+	<!-- 公共样式与js插件-->
+	{% include "./inc/cssjs.html" %}
+	<!-- 登录页样式 -->
+	<link rel="stylesheet" type="text/css" href="/static/css/login.css" />
+	<!-- 登录页js脚本-->
+	<script src="/static/js/business/login/login.js"></script>
 <body>
 	<div class="main" method="post">
 	   <div class="register_main main_01">
@@ -28,7 +28,5 @@
 	   	   <a href="#" class="into_email">立即注册</a>
 	   </div>
 	</div>
-	<script src="/static/js/widget/jquery/jquery-1.9.1.min.js"></script>
-	<script src="/static/js/business/login/login.js"></script>
 </body>
 </html>

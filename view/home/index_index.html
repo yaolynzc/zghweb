@@ -1,35 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>首页</title>
-  <link rel="stylesheet" type="text/css" href="/static/css/common.css">
-	<link rel="stylesheet" type="text/css" href="/static/css/index.css">
-</head>
+	<!-- 公共样式与js插件-->
+	{% include "./inc/cssjs.html" %}
+	<!-- 主页样式 -->
+	<link rel="stylesheet" type="text/css" href="/static/css/index.css" />
+</head> 
 <body>
+	<!-- 顶部状态栏 -->
+	{% include "./inc/header.html" %}
 
-		{% include "./inc/header.html" %}
-    <!-- 搜索部分 -->
-    <div class="main_header" style="width:1210px;margin:0 auto;">
-           <s class="icons logo-icon"></s>
-            <div class="main_search">
-                 <div class="search_con">
-                     <a>交易</a>
-                     <s class="icons caret-icon"></s>
-                     <input class="search_input" type="text" name="" placeholder="请输入关键词">
-                     <span class="search_btn">搜索</span>
-                 </div>
-                 <ul class="boxhot">
-                    <li>国内专利申请</li>
-                    <li>专利许可</li>
-                    <li>科研项目申报</li>
-                    <li>政府项目管理</li>
-                    <li>文学字画</li>
-                    <li>美术动漫</li>
-                    <li>文学</li>
-                 </ul>          
-            </div>
-    </div>
+	<!-- 搜索部分 -->
+	<div class="main_header" style="width:1210px;margin:0 auto;">
+					<s class="icons logo-icon"></s>
+					<div class="main_search">
+								<div class="search_con">
+										<a>交易</a>
+										<s class="icons caret-icon"></s>
+										<input class="search_input" type="text" name="" placeholder="请输入关键词">
+										<span class="search_btn">搜索</span>
+								</div>
+								<ul class="boxhot">
+									<li>国内专利申请</li>
+									<li>专利许可</li>
+									<li>科研项目申报</li>
+									<li>政府项目管理</li>
+									<li>文学字画</li>
+									<li>美术动漫</li>
+									<li>文学</li>
+								</ul>          
+					</div>
+	</div>
 	<!-- 内容区域 -->
 	<div class="main">
 		<div class="main_con">
@@ -549,7 +550,8 @@
         	</ul>
         </div>
 	</div>
-	
+
 	{% include "./inc/footer.html" %}
+
 </body>
 </html>

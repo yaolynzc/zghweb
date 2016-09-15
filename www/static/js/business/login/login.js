@@ -2,8 +2,8 @@ $(function(){
     $("#loginBtn").on('click',function(){
         var mydata={
             username:$("#email").val(),
-            password:$("#passwd").val()
-            // __CSRF__:G_csrf
+            password:$("#passwd").val(),
+            __CSRF__:G_csrf
         }
         
         $.ajax({

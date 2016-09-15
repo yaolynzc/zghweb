@@ -13,7 +13,7 @@ export default class extends Base {
     let is_login = await this.islogin();
     // console.log(is_login);
     if(is_login){
-      this.assign("uname",is_login);
+      this.assign("uname",is_login.name);
     }
     return this.display();
   }
