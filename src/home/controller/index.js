@@ -12,7 +12,7 @@ export default class extends Base {
     this.assign("title","知果汇");
     //判断用户是否登录
     let is_login = await this.islogin();
-    // console.log(is_login);
+    console.log(is_login.name);
     if(is_login){
       this.assign("uname",is_login.name);
     }

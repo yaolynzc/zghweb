@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html>
+<head>
 	<!-- 公共样式与js插件-->
 	{% include "../inc/cssjs.html" %}
 	<!-- 主页样式 -->
 	<link rel="stylesheet" type="text/css" href="/static/css/person.css" />
+</head>
 <body>
 	<!-- 顶部区域 -->
-  {% include "../inc/header.html" %}
+	<div class="container top_area">
+		<!-- 顶部状态栏 -->
+		{% include "../inc/header.html" %}
+
+		<!-- 顶部导航栏 -->
+		{% include "../inc/frame.html" %}
+
+	</div>
 	<!-- 内容区域 -->
 	<div class="container mainbody">
 		<div class="content clearfix">
@@ -14,32 +23,25 @@
 				<div class="type_list">
 					<h4><s class="icons type-icon star-icon"></s>关注中心</h4>
 					<ul>
-						<li><a href="javascript:;">收藏的咨询</a></li>
-						<li><a href="javascript:;">收藏的视频</a></li>
-						<li><a href="javascript:;">收藏的宝贝</a></li>
-						<li><a href="javascript:;">收藏的店铺</a></li>
+						<li><a href="collect_consult.html">收藏的咨询</a></li>
+						<li><a href="collect_video.html">收藏的视频</a></li>
+						<li><a href="collect_products.html">收藏的宝贝</a></li>
+						<li><a href="collect_store.html">收藏的店铺</a></li>
 					</ul>
 				</div>
 				<div class="type_list">
 					<h4><s class="icons type-icon order-icon"></s>订单中心</h4>
 					<ul>
-						<li><a href="javascript:;">我的订单</a></li>
-						<li><a href="javascript:;">我的评价</a></li>
-						<li><a href="javascript:;">退款管理</a></li>
-					</ul>
-				</div>
-				<div class="type_list">
-					<h4><s class="icons  type-icon personnel-icon"></s>人才中心</h4>
-					<ul>
-						<li><a href="javascript:;">我的简历</a></li>
-						<li><a href="javascript:;">投递记录</a></li>
+						<li><a href="my_orders.html">我的订单</a></li>
+						<li><a href="my_assess.html">我的评价</a></li>
+						<li><a href="refund.html">退款管理</a></li>
 					</ul>
 				</div>
 				<div class="type_list">
 					<h4><s class="icons type-icon customer-icon"></s>客户中心</h4>
 					<ul>
-						<li><a href="javascript:;">交易申述</a></li>
-						<li><a href="javascript:;">咨询回复</a></li>
+						<li><a href="trade_complaint.html">交易申述</a></li>
+						<li><a href="reponse.html">咨询回复</a></li>
 					</ul>
 				</div>
 			</div>
@@ -98,102 +100,102 @@
 							<li><a href="javascript:;">平台活动</a></li>
 							<li><a href="javascript:;">知产学堂</a></li>
 						</ul>
-						<a class="more" href="javascript:;">查看更多<s class="icons more-icon"></s></a>
+						<a class="more" href="collect_consult.html">查看更多<s class="icons more-icon"></s></a>
 					</div>
 					<div class="consult_list">
 						<ul class="clearfix">
 							<li>
-								<a href="javascript:;" class="list_con clearfix">
+								<a href="zwgz_article.html" class="list_con clearfix">
 									<p>省政府刘仲初副秘书长调研知识产权工作</p>
 									<span>2015-07-30</span>
 								</a>
 							</li>
 							<li>
-								<a href="javascript:;" class="list_con clearfix">
+								<a href="zwgz_article.html" class="list_con clearfix">
 									<p>省政府刘仲初副秘书长调研知识产权工作</p>
 									<span>2015-07-30</span>
 								</a>
 							</li>
 							<li>
-								<a href="javascript:;" class="list_con clearfix">
+								<a href="zwgz_article.html" class="list_con clearfix">
 									<p>省政府刘仲初副秘书长调研知识产权工作</p>
 									<span>2015-07-30</span>
 								</a>
 							</li>
 							<li>
-								<a href="javascript:;" class="list_con clearfix">
+								<a href="zwgz_article.html" class="list_con clearfix">
 									<p>省政府刘仲初副秘书长调研知识产权工作</p>
 									<span>2015-07-30</span>
 								</a>
 							</li>
 							<li>
-								<a href="javascript:;" class="list_con clearfix">
+								<a href="zwgz_article.html" class="list_con clearfix">
 									<p>省政府刘仲初副秘书长调研知识产权工作</p>
 									<span>2015-07-30</span>
 								</a>
 							</li>
 							<li>
-								<a href="javascript:;" class="list_con clearfix">
+								<a href="zwgz_article.html" class="list_con clearfix">
 									<p>省政府刘仲初副秘书长调研知识产权工作</p>
 									<span>2015-07-30</span>
 								</a>
 							</li>
 							<li>
-								<a href="javascript:;" class="list_con clearfix">
+								<a href="zwgz_article.html" class="list_con clearfix">
 									<p>省政府刘仲初副秘书长调研知识产权工作</p>
 									<span>2015-07-30</span>
 								</a>
 							</li>
 							<li>
-								<a href="javascript:;" class="list_con clearfix">
+								<a href="zwgz_article.html" class="list_con clearfix">
 									<p>省政府刘仲初副秘书长调研知识产权工作</p>
 									<span>2015-07-30</span>
 								</a>
 							</li>
 							<li>
-								<a href="javascript:;" class="list_con clearfix">
+								<a href="zwgz_article.html" class="list_con clearfix">
 									<p>省政府刘仲初副秘书长调研知识产权工作</p>
 									<span>2015-07-30</span>
 								</a>
 							</li>
 							<li>
-								<a href="javascript:;" class="list_con clearfix">
+								<a href="zwgz_article.html" class="list_con clearfix">
 									<p>省政府刘仲初副秘书长调研知识产权工作</p>
 									<span>2015-07-30</span>
 								</a>
 							</li>
 							<li>
-								<a href="javascript:;" class="list_con clearfix">
+								<a href="zwgz_article.html" class="list_con clearfix">
 									<p>省政府刘仲初副秘书长调研知识产权工作</p>
 									<span>2015-07-30</span>
 								</a>
 							</li>
 							<li>
-								<a href="javascript:;" class="list_con clearfix">
+								<a href="zwgz_article.html" class="list_con clearfix">
 									<p>省政府刘仲初副秘书长调研知识产权工作</p>
 									<span>2015-07-30</span>
 								</a>
 							</li>
 							<li>
-								<a href="javascript:;" class="list_con clearfix">
+								<a href="zwgz_article.html" class="list_con clearfix">
 									<p>省政府刘仲初副秘书长调研知识产权工作</p>
 									<span>2015-07-30</span>
 								</a>
 							</li>
 							<li>
-								<a href="javascript:;" class="list_con clearfix">
+								<a href="zwgz_article.html" class="list_con clearfix">
 									<p>省政府刘仲初副秘书长调研知识产权工作</p>
 									<span>2015-07-30</span>
 								</a>
 							</li>
 							<li>
-								<a href="javascript:;" class="list_con clearfix">
+								<a href="zwgz_article.html" class="list_con clearfix">
 									<p>省政府刘仲初副秘书长调研知识产权工作</p>
 									<span>2015-07-30</span>
 								</a>
 							</li>
 							<li>
-								<a href="javascript:;" class="list_con clearfix">
+								<a href="zwgz_article.html" class="list_con clearfix">
 									<p>省政府刘仲初副秘书长调研知识产权工作</p>
 									<span>2015-07-30</span>
 								</a>
@@ -206,56 +208,75 @@
 				<div class="video">
 					<div class="video_top clearfix">
 						<h4>订阅的视频</h4>
-						<a class="more" href="javascript:;">查看更多<s class="icons more-icon"></s></a>
+						<a class="more" href="collect_video.html">查看更多<s class="icons more-icon"></s></a>
 					</div>
 					<div class="video-list clearfix">
-						<div class="video_item">
-							<img src="/static/images/video.png">
-							<span>专利风险评估培训</span>
-						</div>
-						<div class="video_item">
-							<img src="/static/images/video.png">
-							<span>专利风险评估培训</span>
-						</div>
-						<div class="video_item">
-							<img src="/static/images/video.png">
-							<span>专利风险评估培训</span>
-						</div>
-						<div class="video_item">
-							<img src="/static/images/video.png">
-							<span>专利风险评估培训</span>
-						</div>
+						<a href="rcpx_kc_video.html">
+							<div class="video_item">
+								<img src="/static/images/video.png">
+								<span>专利风险评估培训</span>
+							</div>
+						</a>
+						<a href="rcpx_kc_video.html">
+							<div class="video_item">
+								<img src="/static/images/video.png">
+								<span>专利风险评估培训</span>
+							</div>
+						</a>
+						<a href="rcpx_kc_video.html">
+							<div class="video_item">
+								<img src="/static/images/video.png">
+								<span>专利风险评估培训</span>
+							</div>
+						</a>
+						<a href="rcpx_kc_video.html">
+							<div class="video_item">
+								<img src="/static/images/video.png">
+								<span>专利风险评估培训</span>
+							</div>
+						</a>
 					</div>
 				</div>
 				<!-- 收藏宝贝 -->
 				<div class="collection">
 					<div class="collection_top clearfix">
 						<h4>收藏的宝贝</h4>
-						<a class="more" href="javascript:;">查看更多<s class="icons more-icon"></s></a>
+						<a class="more" href="collect_products.html">查看更多<s class="icons more-icon"></s></a>
 					</div>
 					<div class="collection-list clearfix">
-						<div class="collection_item">
-							<img src="/static/images/collect.png">
-							<span>APP开发一站式外包服务</span>
-						</div>
-						<div class="collection_item">
-							<img src="/static/images/collect.png">
-							<span>APP开发一站式外包服务</span>
-						</div>
-						<div class="collection_item">
-							<img src="/static/images/collect.png">
-							<span>APP开发一站式外包服务</span>
-						</div>
-						<div class="collection_item">
-							<img src="/static/images/collect.png">
-							<span>APP开发一站式外包服务</span>
-						</div>
+						<a href="ser_goods.html">
+							<div class="collection_item">
+								<img src="/static/images/collect.png">
+								<span>APP开发一站式外包服务</span>
+							</div>
+						</a>
+						<a href="ser_goods.html">
+							<div class="collection_item">
+								<img src="/static/images/collect.png">
+								<span>APP开发一站式外包服务</span>
+							</div>
+						</a>
+						<a href="ser_goods.html">
+							<div class="collection_item">
+								<img src="/static/images/collect.png">
+								<span>APP开发一站式外包服务</span>
+							</div>
+						</a>
+						<a href="ser_goods.html">
+							<div class="collection_item">
+								<img src="/static/images/collect.png">
+								<span>APP开发一站式外包服务</span>
+							</div>
+						</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+	
 	<!-- 底部区域 -->
 	{% include "../inc/footer.html" %}
+
+<script type="text/javascript" src="/static/js/nav.js"></script>
 </body>
 </html>

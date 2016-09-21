@@ -1,0 +1,35 @@
+.order_table{width:1070px;border-collapse: collapse;font-size: 14px;margin-top: 20px;}
+.table_tr{background:#f6f6f6;height: 40px;line-height: 40px;}
+.table_td{border:1px solid #e6e6e6;}
+.th01{text-align: center;width:600px;}
+.th02{text-align: center;width:174px;}
+.th03{text-align: center;width:148px;}
+.th04{text-align: center;width:148px;}
+.store_table td{line-height: 30px;color:#717171;}
+.td01{padding-left: 15px;border-right: 1px solid #e6e6e6;height: 75px;}
+.td02{text-align: center;border-right: 1px solid #e6e6e6;color: #484848;}
+.td03{text-align: center;border-right: 1px solid #e6e6e6;color: #484848;}
+.td04{text-align: center;color:#ff4900 !important;}
+
+.th01_con p{display: inline-block;float: left;padding: 0 10px;font-size: 14px;}
+.order-time{color:#a4a4a4;}
+.order-num{color:#a4a4a4;}
+.order-num span{color:#333;}
+.order-name{color:#333;margin-left: 60px;}
+.table_td p{line-height: 30px;}
+.price{color:#ff4900;}
+.order_detail{color:#333;}
+.pay_btn{background: #ff4900 !important;padding: 5px 10px;width:70px;border-radius: 4px;color:#fff;display: block;margin:10px auto;float: none !important;}
+.download_btn{padding: 5px 10px;border-radius: 4px;display: block;margin:10px auto;float: none !important;}
+.confirm_btn{background: #366bb3 !important;padding: 5px 10px;border-radius: 4px;color:#fff;display: block;margin:10px auto;float: none !important;}
+.judge_btn{padding: 5px 10px;border-radius: 4px;display: block;margin:10px auto;float: none !important;border:1px solid #b1b1b1;width:80px;color:#333;}
+.cancel_order{color:#333;line-height: 24px;}
+.payback{float: right;color: #333;margin-right: 20px;}
+
+.product_img{width: 80px;float: left;}
+.product_img img{width: 100%;margin: 10px auto;}
+.product_tips{float: left;padding: 10px; font-size: 14px;width: 200px;}
+.product_tips h4{width: inherit;line-height: 20px;color:#1b1b1b;}
+.product_tips p{margin-top: 30px;font-size: 12px;color:#929292;}
+.product_type{float: left;width: 220px;}
+.product_type span{line-height: 40px;color:#929292;}
