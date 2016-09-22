@@ -18,12 +18,14 @@ export default class extends Base {
     let data = this.post();
     let md5Pas = await think.md5(data.password);
     let lname = await data.username;
-    // console.log(md5Pas + "_" + lname);
+    //从用户表查询用户信息
     let result = await this.model("user").findOne("user",{id:lname});
+    
     let info = {
       name:lname,
       password:md5Pas
-    }
+    };
+
     if(lname===result.id && md5Pas===result.pwd){
       await this.session("userInfo",info);
       return this.json({

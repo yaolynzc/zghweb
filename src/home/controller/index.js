@@ -9,12 +9,11 @@ export default class extends Base {
    */
   async indexAction(){
 
-    this.assign("title","知果汇");
-    //判断用户是否登录
-    let is_login = await this.islogin();
-    console.log(is_login.name);
-    if(is_login){
-      this.assign("uname",is_login.name);
+    this.assign("title","知果汇首页");
+
+    //判断是否登陆
+    if(this.is_login){
+      this.assign("uname",this.is_login.name);
     }
     return this.display();
   }

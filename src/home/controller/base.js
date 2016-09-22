@@ -10,6 +10,9 @@ export default class extends think.controller.base {
     // csrf 防止模拟提交
     let csrf=await this.session("__CSRF__");
     this.assign("csrf",csrf);
+
+    //获取登录状态
+    this.is_login = await this.islogin();
   }
   
   async islogin() {
