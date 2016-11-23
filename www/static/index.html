@@ -1,0 +1,734 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>知果汇</title>
+    <meta name="keywords" content="知果汇" />
+    <meta name="description" content="知果汇" />
+    <link type="text/css" rel="stylesheet" href="css/base.css" />
+    <link type="text/css" rel="stylesheet" href="css/index.css" />
+
+    <!--[if IE 7]>
+    <link type="text/css" rel="stylesheet" href="css/ie7.css" />
+    <![endif]-->
+</head>
+<body>
+
+<!--header开始-->
+<div class="dtop">
+    <div class="dtopArea clearfix">
+        <div class="dleft fl">
+            <span>你好，欢迎！ </span>请<a href="login.html" class="login">登录</a><a href="register.html" class="register">免费注册</a>
+        </div>
+        <div class="dright fr">
+            <ul class="clearfix">
+                <li><a href="my_orders.html">我的订单</a> </li>
+                <li class="cart"><em></em><a href="cart.html">购物车</a> </li>
+                <li class="arr"><a href="javascript:void (0);">店铺中心</a><em></em>
+                      <div class="hideNav hw1" style="display: none;">
+                          <a href="store.html">马上开店</a><a href="store_info.html">交易类宝贝店铺</a><a href="store_info.html">服务类宝贝店铺</a>
+                      </div>
+                </li>
+                <li class="arr"><a href="javascript:void (0);">我的收藏</a><em></em>
+                    <div class="hideNav hw1" style="display: none;">
+                        <a href="collect_consult.html">收藏的资讯</a><a href="collect_video.html">收藏的视频</a><a href="collect_products.html">收藏的宝贝</a><a href="collect_store.html">收藏的店铺</a>
+                    </div>
+                </li>
+                <li class="arr"><a href="javascript:void (0);">关注我们</a><em></em>
+                    <div class="hideNav hw2 clearfix" style="display: none;">
+                        <p class="weixin fl"><span><img src="images/wx.png" /></span> <span>关注知果汇微信</span></p>
+                        <p class="weibo fr"><span><img src="images/wb.png" /></span> <span>关注知果汇微博</span></p>
+                    </div>
+                </li>
+                <li class="arr"><a href="javascript:void (0);">网站导航</a><em></em>
+                    <div class="hideNav hw3 clearfix" style="display: none;">
+                        <dl>
+                            <dt><a href="B-fwsc.html">服务市场</a></dt>
+                            <dd class="clearfix"><a href="B-fwsc.html">专利评议</a>
+                                <a href="B-fwsc.html">专利维权</a><a href="B-fwsc.html">专利托管</a><a href="B-fwsc.html">专利代理</a><a href="B-fwsc.html">政策应用</a><a href="B-fwsc.html">设计开发</a><a href="B-fwsc.html">其他</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><a href="C-jysc.html">交易市场</a> </dt>
+                            <dd class="clearfix"><a href="C-jysc.html">版权</a><a href="C-jysc.html">商标</a><a href="C-jysc.html">专有技术</a><a href="C-jysc.html">专利</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><a href="zwgz.html">资讯中心</a> </dt>
+                            <dd class="clearfix"><a href="zwgz.html">政务工作</a>
+                                <a href="zwgz.html">IPR要闻</a><a href="zwgz.html">平台活动</a><a href="zwgz.html">知识学堂</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><a href="P-cjwt.html">帮助中心</a> </dt>
+                            <dd class="clearfix"><a href="P-cjwt.html">服务指南</a>
+                                <a href="P-cjwt.html">订单管理</a><a href="P-cjwt.html">售后服务</a><a href="P-cjwt.html">支付及发票</a><a href="P-cjwt.html">账户及会员</a>
+                            </dd>
+                        </dl>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="top clearfix">
+    <a href="#" class="logo fl"><img src="images/logo.png" /></a>
+    <div class="search fl">
+        <div class="searchArea">
+            <div class="selectd fl">
+                <span><i>交易</i><em></em></span>
+                <ul style="display: none;">
+                    <li>交易</li>
+                    <li>服务</li>
+                </ul>
+            </div>
+            <input type="text" class="fl" value="请输入关键词" onFocus="if(value==defaultValue){value='';this.style.color='#000'}" onBlur="if(!value){value=defaultValue;this.style.color='#999'}" style="color:#999999" />
+            <input type="button" class="fr" value="搜索" />
+        </div>
+        <div class="hotword"><a href="#">国内专利申请</a> <a href="#">专利许可</a> <a href="#">科研项目研究</a> <a href="#">政府项目管理</a> <a href="#">国内专利申请</a> <a href="#">文学字画</a> </div>
+    </div>
+</div>
+<!--header结束-->
+
+<!--mid1开始-->
+<div class="mid1 clearfix">
+    <div class="nav2 fl">
+        <div class="navtop">全部商品</div>
+        <div class="navList" id="navList">
+            <ul>
+                <li>
+                    <h2>版权</h2>
+                    <div class="hideArea" style="display: none;"><a href="C-jysc.html">文学</a><a href="C-jysc.html">曲艺</a><a href="C-jysc.html">文学</a><a href="C-jysc.html">曲艺</a><a href="C-jysc.html">文学</a><a href="C-jysc.html">曲艺</a><a href="C-jysc.html">文学</a><a href="C-jysc.html">曲艺</a><a href="C-jysc.html">文学</a><a href="C-jysc.html">曲艺</a></div>
+                </li>
+                <li>
+                    <h2>商标</h2>
+                    <div class="hideArea" style="display: none;"><a href="C-jysc.html">文学</a><a href="C-jysc.html">曲艺</a><a href="C-jysc.html">文学</a><a href="C-jysc.html">曲艺</a><a href="C-jysc.html">文学</a><a href="C-jysc.html">曲艺</a><a href="C-jysc.html">文学</a><a href="C-jysc.html">曲艺</a><a href="C-jysc.html">文学</a><a href="C-jysc.html">曲艺</a></div>
+                </li>
+                <li>
+                    <h2>专有技术</h2>
+                    <div class="hideArea" style="display: none;"><a href="C-jysc.html">文学</a><a href="C-jysc.html">曲艺</a><a href="C-jysc.html">文学</a><a href="C-jysc.html">曲艺</a><a href="C-jysc.html">文学</a><a href="C-jysc.html">曲艺</a><a href="C-jysc.html">文学</a><a href="C-jysc.html">曲艺</a><a href="C-jysc.html">文学</a><a href="C-jysc.html">曲艺</a></div>
+                </li>
+                <li>
+                    <h2>专利</h2>
+                    <div class="hideArea" style="display: none;"><a href="C-jysc.html">文学</a><a href="C-jysc.html">曲艺</a><a href="C-jysc.html">文学</a><a href="C-jysc.html">曲艺</a><a href="C-jysc.html">文学</a><a href="C-jysc.html">曲艺</a><a href="C-jysc.html">文学</a><a href="C-jysc.html">曲艺</a><a href="C-jysc.html">文学</a><a href="C-jysc.html">曲艺</a></div>
+                </li>
+                <li>
+                    <h2>专利评议</h2>
+                    <div class="hideArea" style="display: none;"><a href="C-jysc.html">文学</a><a href="C-jysc.html">曲艺</a><a href="C-jysc.html">文学</a><a href="C-jysc.html">曲艺</a><a href="C-jysc.html">文学</a><a href="C-jysc.html">曲艺</a><a href="C-jysc.html">文学</a><a href="C-jysc.html">曲艺</a><a href="C-jysc.html">文学</a><a href="C-jysc.html">曲艺</a></div>
+                </li>
+                <li>
+                    <h2>专利维权</h2>
+                    <div class="hideArea" style="display: none;"><a href="C-jysc.html">文学</a><a href="C-jysc.html">曲艺</a><a href="C-jysc.html">文学</a><a href="C-jysc.html">曲艺</a><a href="C-jysc.html">文学</a><a href="C-jysc.html">曲艺</a><a href="C-jysc.html">文学</a><a href="C-jysc.html">曲艺</a><a href="C-jysc.html">文学</a><a href="C-jysc.html">曲艺</a></div>
+                </li>
+                <li>
+                    <h2>专利托管</h2>
+                    <div class="hideArea" style="display: none;"><a href="C-jysc.html">文学</a><a href="C-jysc.html">曲艺</a><a href="C-jysc.html">文学</a><a href="C-jysc.html">曲艺</a><a href="C-jysc.html">文学</a><a href="C-jysc.html">曲艺</a><a href="C-jysc.html">文学</a><a href="C-jysc.html">曲艺</a><a href="C-jysc.html">文学</a><a href="C-jysc.html">曲艺</a></div>
+                </li>
+                <li>
+                    <h2>专利代理</h2>
+                    <div class="hideArea" style="display: none;"><a href="C-jysc.html">文学</a><a href="C-jysc.html">曲艺</a><a href="C-jysc.html">文学</a><a href="C-jysc.html">曲艺</a><a href="C-jysc.html">文学</a><a href="C-jysc.html">曲艺</a><a href="C-jysc.html">文学</a><a href="C-jysc.html">曲艺</a><a href="C-jysc.html">文学</a><a href="C-jysc.html">曲艺</a></div>
+                </li>
+                <li>
+                    <h2>专利应用</h2>
+                    <div class="hideArea" style="display: none;"><a href="C-jysc.html">文学</a><a href="C-jysc.html">曲艺</a><a href="C-jysc.html">文学</a><a href="C-jysc.html">曲艺</a><a href="C-jysc.html">文学</a><a href="C-jysc.html">曲艺</a><a href="C-jysc.html">文学</a><a href="C-jysc.html">曲艺</a><a href="C-jysc.html">文学</a><a href="C-jysc.html">曲艺</a></div>
+                </li>
+                <li>
+                    <h2>设计开发</h2>
+                    <div class="hideArea" style="display: none;"><a href="C-jysc.html">文学</a><a href="C-jysc.html">曲艺</a><a href="C-jysc.html">文学</a><a href="C-jysc.html">曲艺</a><a href="C-jysc.html">文学</a><a href="C-jysc.html">曲艺</a><a href="C-jysc.html">文学</a><a href="C-jysc.html">曲艺</a><a href="C-jysc.html">文学</a><a href="C-jysc.html">曲艺</a></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="mid1Rig fr">
+        <div class="mid1Nav"><a href="C-jysc.html">交易市场</a><span>|</span><a href="B-fwsc.html">服务市场</a><span>|</span><a href="zwgz.html">政务工作</a><span>|</span><a href="G-ptzx-index.html">平台资讯</a><span>|</span><a href="rcpx.html">人才培训</a> </div>
+        <div class="mid1Area clearfix">
+            <div class="ggArea fl">
+                <div class="div1 clearfix">
+                    <div class="picshow fl">
+                        <div class="picList">
+                            <ul>
+                                <li><a href="#"><img src="images/ggpic1.png" /> </a> </li>
+                                <li><a href="#"><img src="images/ggpic1.png" /> </a> </li>
+                                <li><a href="#"><img src="images/ggpic1.png" /> </a> </li>
+                                <li><a href="#"><img src="images/ggpic1.png" /> </a> </li>
+                            </ul>
+                        </div>
+                        <div class="hd">
+                            <ul></ul>
+                        </div>
+                        <a href="javascript:void(0);" class="prev"></a>
+                        <a href="javascript:void(0);" class="next"></a>
+                    </div>
+                    <div class="ggpic1 fr">
+                        <a href="#"><img src="images/ggpic2.png" /> </a>
+                        <a href="#" class="martop2"><img src="images/ggpic3.png" /> </a>
+                    </div>
+                </div>
+                <div class="div2 clearfix">
+                    <a href="#" class="fl"><img src="images/ggpic4.png" /> </a>
+                    <a href="#" class="fl second2"><img src="images/ggpic5.png" /> </a>
+                    <a href="#" class="fr"><img src="images/ggpic6.png" /> </a>
+                </div>
+            </div>
+            <div class="ggArea2 fr">
+                <div class="login">
+                    <!--未登录
+                    <p class="userImg"><img src="images/uh.png" /> </p>
+                    <p class="userMes">你好，请登录！</p>
+                    <p class="loginBtn"><input type="submit" value="登录" /> <input type="reset" value="取消" /> </p>-->
+                    <p class="userImg"><img src="images/uh.png" /> </p>
+                    <p class="userMes">你好，fq_158977gpw</p>
+                    <div class="loginSue">
+                        <ul class="clearfix">
+                            <li><span>1</span><p>待付定金</p></li>
+                            <li><span>2</span><p>已付定金</p></li>
+                            <li><span>4</span><p>待付全款</p></li>
+                            <li><span>5</span><p>待评价</p></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="newsgg">
+                    <div class="newsTitle clearfix"><h2 class="fl">平台公告</h2><a href="G-ptzx-xshd.html" class="fr">更多</a> </div>
+                    <div class="newsList">
+                        <ul>
+                            <li><a href="G-xshd-wenzhang.html">【公告】关于假冒厨知网诈骗的声明</a> </li>
+                            <li><a href="G-xshd-wenzhang.html">【公告】关于假冒厨知网诈骗的声明</a> </li>
+                            <li><a href="G-xshd-wenzhang.html">【公告】关于假冒厨知网诈骗的声明</a> </li>
+                            <li><a href="G-xshd-wenzhang.html">【公告】关于假冒厨知网诈骗的声明</a> </li>
+                            <li><a href="G-xshd-wenzhang.html">【公告】关于假冒厨知网诈骗的声明</a> </li>
+                            <li><a href="G-xshd-wenzhang.html">【公告】关于假冒厨知网诈骗的声明</a> </li>
+                            <li><a href="G-xshd-wenzhang.html">【公告】关于假冒厨知网诈骗的声明</a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--mid1结束-->
+
+<!--mid2开始-->
+<div class="mid2">
+    <ul class="clearfix">
+        <li><a href="#" class="lia icon1"></a> <a href="http://www.cponline.gov.cn/" class="ih1">专利申请</a> </li>
+        <li><a href="#" class="lia icon2"></a> <a href="zwgz_fyjh.html" class="ih1">费用减缓</a> </li>
+        <li><a href="#" class="lia icon3"></a> <a href="zwgz_zljf.html" class="ih1">专利缴费</a> </li>
+        <li><a href="#" class="lia icon4"></a> <a href="zwgz_htba.html" class="ih1">合同备案</a> </li>
+        <li><a href="#" class="lia icon5"></a> <a href="#" class="ih1">项目申请</a> </li>
+        <li><a href="#" class="lia icon6"></a> <a href="zwgz_xsdc.html" class="ih1">线上调查</a> </li>
+        <li><a href="#" class="lia icon7"></a> <a href="zwgz_zydj.html" class="ih1">质押登记</a> </li>
+        <li><a href="#" class="lia icon8"></a> <a href="zwgz_tzzq.html" class="ih1">通知书自取</a> </li>
+        <li><a href="#" class="lia icon9"></a> <a href="zwgz_djfb.html" class="ih1">登记簿副本</a> </li>
+        <li><a href="#" class="lia icon10"></a> <a href="zwgz_bgxz.html" class="ih1">表格下载</a> </li>
+    </ul>
+</div>
+<!--mid2结束-->
+
+<!--mid3开始-->
+<div class="mid3">
+    <div class="mtitle clearfix">
+        <div class="mH2 fl"><em class="fl"></em><h2 class="fl">政务大厅</h2></div>
+        <div class="mList fr" id="mList">
+            <a href="javascript:void(0);" class="on">公告通知</a><a href="javascript:void(0);">人才培训</a><a href="javascript:void(0);">国务院要闻</a><a href="javascript:void(0);">政策早知道</a><a href="javascript:void(0);">IPR要闻</a>
+        </div>
+    </div>
+    <div class="mid3Area" id="mid3Area">
+        <div class="mid3Tab">
+            <div class="notice clearfix">
+                <div class="noticePic fl">
+                    <div class="noticeList">
+                        <ul>
+                            <li><a href="#" class="img"><img src="images/newpic.jpg" /> </a> <a href="#" class="txt">中俄、中波专利审查高速路试点将自2015年7月1日起延长1</a> </li>
+                            <li><a href="#" class="img"><img src="images/newpic.jpg" /> </a> <a href="#" class="txt">中俄、中波专利审查高速路试点将自2015年7月1日起延长2</a> </li>
+                            <li><a href="#" class="img"><img src="images/newpic.jpg" /> </a> <a href="#" class="txt">中俄、中波专利审查高速路试点将自2015年7月1日起延长3</a> </li>
+                        </ul>
+                    </div>
+                    <a href="javascript:void(0);" class="prev"><em></em></a>
+                    <a href="javascript:void(0);" class="next"><em></em></a>
+                </div>
+                <div class="noticeTxt fr">
+                    <div class="title clearfix"><h2 class="fl">最新通知</h2><a href="zwgz_list.html" class="more fr">更多 &gt;</a> </div>
+                    <div class="nList">
+                        <ul>
+                            <li><em>1</em>
+                                <p class="ph2 clearfix"><a href="zwgz_article.html" class="fl">省政府刘仲初副秘书长调研知识产权工作</a><span class="fr">2015-07-30</span></p>
+                                <p class="ptext">7月28日，省政府刘仲初副秘书长一行到访省知识产权局调研指导工作，省科技厅党组书记、副厅长、知识产权局党组书记王东风、省知识产权局局长...</p>
+                            </li>
+                            <li><em>2</em>
+                                <p class="ph2 clearfix"><a href="zwgz_article.html" class="fl">省政府刘仲初副秘书长调研知识产权工作</a><span class="fr">2015-07-30</span></p>
+                                <p class="ptext">7月28日，省政府刘仲初副秘书长一行到访省知识产权局调研指导工作，省科技厅党组书记、副厅长、知识产权局党组书记王东风、省知识产权局局长...</p>
+                            </li>
+                            <li><em>3</em>
+                                <p class="ph2 clearfix"><a href="zwgz_article.html" class="fl">省政府刘仲初副秘书长调研知识产权工作</a><span class="fr">2015-07-30</span></p>
+                                <p class="ptext">7月28日，省政府刘仲初副秘书长一行到访省知识产权局调研指导工作，省科技厅党组书记、副厅长、知识产权局党组书记王东风、省知识产权局局长...</p>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mid3Tab" style="display: none;">
+            <div class="rcList">
+                <ul>
+                    <li><a href="rcpx_rck_info.html"><img src="images/rcpxpic.jpg" /><span>殷洪玺</span> </a> </li>
+                    <li><a href="rcpx_rck_info.html"><img src="images/rcpxpic.jpg" /><span>殷洪玺</span> </a> </li>
+                    <li><a href="rcpx_rck_info.html"><img src="images/rcpxpic.jpg" /><span>殷洪玺</span> </a> </li>
+                    <li><a href="rcpx_rck_info.html"><img src="images/rcpxpic.jpg" /><span>殷洪玺</span> </a> </li>
+                    <li><a href="rcpx_rck_info.html"><img src="images/rcpxpic.jpg" /><span>殷洪玺</span> </a> </li>
+                    <li><a href="rcpx_rck_info.html"><img src="images/rcpxpic.jpg" /><span>殷洪玺</span> </a> </li>
+                    <li><a href="rcpx_rck_info.html"><img src="images/rcpxpic.jpg" /><span>殷洪玺</span> </a> </li>
+                    <li><a href="rcpx_rck_info.html"><img src="images/rcpxpic.jpg" /><span>殷洪玺</span> </a> </li>
+                    <li><a href="rcpx_rck_info.html"><img src="images/rcpxpic.jpg" /><span>殷洪玺</span> </a> </li>
+                    <li><a href="rcpx_rck_info.html"><img src="images/rcpxpic.jpg" /><span>殷洪玺</span> </a> </li>
+                    <li><a href="rcpx_rck_info.htmlimg src="images/rcpxpic.jpg" /><span>殷洪玺</span> </a> </li>
+                    <li><a href="rcpx_rck_info.html"><img src="images/rcpxpic.jpg" /><span>殷洪玺</span> </a> </li>
+                </ul>
+            </div>
+        </div>
+        <div class="mid3Tab" style="display: none;">
+            <div class="ywList">
+                <ul>
+                    <li class="clearfix">
+                        <a href="zwgz_article.html" class="ywPic fl"><img src="images/ywpic1.jpg" /> </a>
+                        <div class="ywArea fr">
+                            <a href="zwgz_article.html" class="ywTit">省政府刘仲初副秘书长调研知识产权工作</a>
+                            <p class="ywinfo">7月28日，省政府刘仲初副秘书长一行到访省知识产权局调研指导工作，省科技厅党组书记、副厅长、知识产权局党组书记王东风、省知识产权...</p>
+                            <p class="time">发布时间 : 2015-07-30</p>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <a href="zwgz_article.html" class="ywPic fl"><img src="images/ywpic1.jpg" /> </a>
+                        <div class="ywArea fr">
+                            <a href="zwgz_article.html" class="ywTit">省政府刘仲初副秘书长调研知识产权工作</a>
+                            <p class="ywinfo">7月28日，省政府刘仲初副秘书长一行到访省知识产权局调研指导工作，省科技厅党组书记、副厅长、知识产权局党组书记王东风、省知识产权...</p>
+                            <p class="time">发布时间 : 2015-07-30</p>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <a href="zwgz_article.html" class="ywPic fl"><img src="images/ywpic1.jpg" /> </a>
+                        <div class="ywArea fr">
+                            <a href="zwgz_article.html" class="ywTit">省政府刘仲初副秘书长调研知识产权工作</a>
+                            <p class="ywinfo">7月28日，省政府刘仲初副秘书长一行到访省知识产权局调研指导工作，省科技厅党组书记、副厅长、知识产权局党组书记王东风、省知识产权...</p>
+                            <p class="time">发布时间 : 2015-07-30</p>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <a href="zwgz_article.html" class="ywPic fl"><img src="images/ywpic1.jpg" /> </a>
+                        <div class="ywArea fr">
+                            <a href="zwgz_article.html" class="ywTit">省政府刘仲初副秘书长调研知识产权工作</a>
+                            <p class="ywinfo">7月28日，省政府刘仲初副秘书长一行到访省知识产权局调研指导工作，省科技厅党组书记、副厅长、知识产权局党组书记王东风、省知识产权...</p>
+                            <p class="time">发布时间 : 2015-07-30</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="mid3Tab" style="display: none;">
+            <div class="ywList">
+                <ul>
+                    <li class="clearfix">
+                        <a href="zwgz_article.html" class="ywPic fl"><img src="images/ywpic2.jpg" /> </a>
+                        <div class="ywArea fr">
+                            <a href="zwgz_article.html" class="ywTit">省政府刘仲初副秘书长调研知识产权工作</a>
+                            <p class="ywinfo">7月28日，省政府刘仲初副秘书长一行到访省知识产权局调研指导工作，省科技厅党组书记、副厅长、知识产权局党组书记王东风、省知识产权...</p>
+                            <p class="time">发布时间 : 2015-07-30</p>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <a href="zwgz_article.html" class="ywPic fl"><img src="images/ywpic2.jpg" /> </a>
+                        <div class="ywArea fr">
+                            <a href="zwgz_article.html" class="ywTit">省政府刘仲初副秘书长调研知识产权工作</a>
+                            <p class="ywinfo">7月28日，省政府刘仲初副秘书长一行到访省知识产权局调研指导工作，省科技厅党组书记、副厅长、知识产权局党组书记王东风、省知识产权...</p>
+                            <p class="time">发布时间 : 2015-07-30</p>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <a href="zwgz_article.html" class="ywPic fl"><img src="images/ywpic2.jpg" /> </a>
+                        <div class="ywArea fr">
+                            <a href="zwgz_article.html" class="ywTit">省政府刘仲初副秘书长调研知识产权工作</a>
+                            <p class="ywinfo">7月28日，省政府刘仲初副秘书长一行到访省知识产权局调研指导工作，省科技厅党组书记、副厅长、知识产权局党组书记王东风、省知识产权...</p>
+                            <p class="time">发布时间 : 2015-07-30</p>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <a href="zwgz_article.html" class="ywPic fl"><img src="images/ywpic2.jpg" /> </a>
+                        <div class="ywArea fr">
+                            <a href="zwgz_article.html" class="ywTit">省政府刘仲初副秘书长调研知识产权工作</a>
+                            <p class="ywinfo">7月28日，省政府刘仲初副秘书长一行到访省知识产权局调研指导工作，省科技厅党组书记、副厅长、知识产权局党组书记王东风、省知识产权...</p>
+                            <p class="time">发布时间 : 2015-07-30</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="mid3Tab" style="display: none;">
+            <div class="ywList">
+                <ul>
+                    <li class="clearfix">
+                        <a href="zwgz_article.html" class="ywPic fl"><img src="images/ywpic3.jpg" /> </a>
+                        <div class="ywArea fr">
+                            <a href="zwgz_article.html" class="ywTit">省政府刘仲初副秘书长调研知识产权工作</a>
+                            <p class="ywinfo">7月28日，省政府刘仲初副秘书长一行到访省知识产权局调研指导工作，省科技厅党组书记、副厅长、知识产权局党组书记王东风、省知识产权...</p>
+                            <p class="time">发布时间 : 2015-07-30</p>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <a href="zwgz_article.html" class="ywPic fl"><img src="images/ywpic3.jpg" /> </a>
+                        <div class="ywArea fr">
+                            <a href="zwgz_article.html" class="ywTit">省政府刘仲初副秘书长调研知识产权工作</a>
+                            <p class="ywinfo">7月28日，省政府刘仲初副秘书长一行到访省知识产权局调研指导工作，省科技厅党组书记、副厅长、知识产权局党组书记王东风、省知识产权...</p>
+                            <p class="time">发布时间 : 2015-07-30</p>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <a href="zwgz_article.html" class="ywPic fl"><img src="images/ywpic3.jpg" /> </a>
+                        <div class="ywArea fr">
+                            <a href="zwgz_article.html" class="ywTit">省政府刘仲初副秘书长调研知识产权工作</a>
+                            <p class="ywinfo">7月28日，省政府刘仲初副秘书长一行到访省知识产权局调研指导工作，省科技厅党组书记、副厅长、知识产权局党组书记王东风、省知识产权...</p>
+                            <p class="time">发布时间 : 2015-07-30</p>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <a href="zwgz_article.html" class="ywPic fl"><img src="images/ywpic3.jpg" /> </a>
+                        <div class="ywArea fr">
+                            <a href="zwgz_article.html" class="ywTit">省政府刘仲初副秘书长调研知识产权工作</a>
+                            <p class="ywinfo">7月28日，省政府刘仲初副秘书长一行到访省知识产权局调研指导工作，省科技厅党组书记、副厅长、知识产权局党组书记王东风、省知识产权...</p>
+                            <p class="time">发布时间 : 2015-07-30</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--mid3结束-->
+<!--mid4开始-->
+<div class="mid4">
+    <div class="mtitle clearfix">
+        <div class="mH2 fl"><em class="fl"></em><h2 class="fl">为您推荐</h2></div>
+        <div class="mList fr" id="mList1">
+            <a href="javascript:void(0);" class="on">交易推荐</a><a href="javascript:void(0);">服务推荐</a>
+        </div>
+    </div>
+    <div class="tjList">
+        <ul class="clearfix">
+            <li class="clearfix">
+                <a href="#" class="tjimg fl"><img src="images/tupic.jpg" /> </a>
+                <div class="tjRight fr">
+                    <p class="price">￥3425.00</p>
+                    <p class="tjTxt">出售生产加工芥末油/芥末膏/青芥辣/绿芥末/芥末酱/技术转让</p>
+                    <a href="#">华科专利中心</a>
+                </div>
+            </li>
+            <li class="clearfix">
+                <a href="#" class="tjimg fl"><img src="images/tupic.jpg" /> </a>
+                <div class="tjRight fr">
+                    <p class="price">￥3425.00</p>
+                    <p class="tjTxt">出售生产加工芥末油/芥末膏/青芥辣/绿芥末/芥末酱/技术转让</p>
+                    <a href="#">华科专利中心</a>
+                </div>
+            </li>
+            <li class="clearfix">
+                <a href="#" class="tjimg fl"><img src="images/tupic.jpg" /> </a>
+                <div class="tjRight fr">
+                    <p class="price">￥3425.00</p>
+                    <p class="tjTxt">出售生产加工芥末油/芥末膏/青芥辣/绿芥末/芥末酱/技术转让</p>
+                    <a href="#">华科专利中心</a>
+                </div>
+            </li>
+            <li class="clearfix">
+                <a href="#" class="tjimg fl"><img src="images/tupic.jpg" /> </a>
+                <div class="tjRight fr">
+                    <p class="price">￥3425.00</p>
+                    <p class="tjTxt">出售生产加工芥末油/芥末膏/青芥辣/绿芥末/芥末酱/技术转让</p>
+                    <a href="#">华科专利中心</a>
+                </div>
+            </li>
+        </ul>
+        <ul class="clearfix" style="display: none;">
+            <li class="clearfix">
+                <a href="tra_goods.html" class="tjimg fl"><img src="images/tupic.jpg" /> </a>
+                <div class="tjRight fr">
+                    <a href="tra_goods.html" class="tjTxt">APP开发一站式外包服务</a>
+                    <a href="tra_goods.html">华科专利中心</a>
+                </div>
+            </li>
+            <li class="clearfix">
+                <a href="tra_goods.html" class="tjimg fl"><img src="images/tupic.jpg" /> </a>
+                <div class="tjRight fr">
+                    <a href="tra_goods.html" class="tjTxt">APP开发一站式外包服务</a>
+                    <a href="tra_goods.html">华科专利中心</a>
+                </div>
+            </li>
+            <li class="clearfix">
+                <a href="tra_goods.html" class="tjimg fl"><img src="images/tupic.jpg" /> </a>
+                <div class="tjRight fr">
+                    <a href="tra_goods.html" class="tjTxt">APP开发一站式外包服务</a>
+                    <a href="tra_goods.html">华科专利中心</a>
+                </div>
+            </li>
+            <li class="clearfix">
+                <a href="tra_goods.html" class="tjimg fl"><img src="images/tupic.jpg" /> </a>
+                <div class="tjRight fr">
+                    <a href="tra_goods.html" class="tjTxt">APP开发一站式外包服务</a>
+                    <a href="tra_goods.html">华科专利中心</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--mid4结束-->
+<!--mid5开始-->
+<div class="mid5 clearfix">
+    <div class="mid5left fl">
+        <img src="images/scpic1.jpg" />
+        <h2>交易市场</h2>
+        <p><a href="C-jysc.html">进入交易市场 &gt;</a> </p>
+    </div>
+    <div class="mid5left2 fl">
+        <ul>
+            <li>
+                <div class="mid5Tit clearfix"><h2 class="fl">版权</h2><a href="#" class="fr">更多&gt;</a> </div>
+                <div class="mid5A"><a href="C-jysc.html">文学</a><a href="C-jysc.html">曲艺</a><a href="C-jysc.html">设计</a><a href="C-jysc.html">美术</a><a href="C-jysc.html">戏曲</a><a href="C-jysc.html">古玩</a><a href="C-jysc.html">影视</a><a href="C-jysc.html">舞蹈</a><a href="C-jysc.html">字画</a><a href="C-jysc.html">动漫</a><a href="C-jysc.html">工程</a><a href="C-jysc.html">杂项</a><a href="C-jysc.html">音乐</a><a href="C-jysc.html">科技</a></div>
+            </li>
+            <li>
+                <div class="mid5Tit clearfix"><h2 class="fl">商标</h2><a href="#" class="fr">更多&gt;</a> </div>
+                <div class="mid5A"><a href="C-jysc.html">化学原料</a><a href="C-jysc.html">颜料油漆</a><a href="C-jysc.html">日化用品</a><a href="C-jysc.html">燃料油脂</a><a href="C-jysc.html">医疗用品</a><a href="C-jysc.html">金属材料</a><a href="C-jysc.html">机械设备</a><a href="C-jysc.html">手工器械</a><a href="C-jysc.html">科学仪器</a><a href="C-jysc.html">医疗器械</a><a href="C-jysc.html">家用电器</a><a href="C-jysc.html">运输工具</a><a href="C-jysc.html">军火烟火</a><a href="C-jysc.html">珠宝钟表</a><a href="C-jysc.html">音乐器材</a><a href="C-jysc.html">办公用具</a><a href="C-jysc.html">橡胶制品</a><a href="C-jysc.html">皮革皮具</a><a href="C-jysc.html">建筑材料</a><a href="C-jysc.html">家居用品</a></div>
+            </li>
+            <li>
+                <div class="mid5Tit clearfix"><h2 class="fl">专有技术</h2><a href="#" class="fr">更多&gt;</a> </div>
+                <div class="mid5A"><a href="C-jysc.html">农林/渔牧/食品</a><a href="C-jysc.html">交通/运输/包装</a><a href="C-jysc.html">化工/冶金/生物</a><a href="C-jysc.html">建筑/采挖/照明</a><a href="C-jysc.html">机械/加工/设备</a><a href="C-jysc.html">通讯/电子/数码</a><a href="C-jysc.html">服饰/日用/家电</a><a href="C-jysc.html">纺织/造纸/服装</a><a href="C-jysc.html">医疗/保健/美容</a><a href="C-jysc.html">能源/动力/电力</a></div>
+            </li>
+            <li>
+                <div class="mid5Tit clearfix"><h2 class="fl">专利</h2><a href="#" class="fr">更多&gt;</a> </div>
+                <div class="mid5A"><a href="C-jysc.html">农林/渔牧/食品</a><a href="C-jysc.html">交通/运输/包装</a><a href="C-jysc.html">化工/冶金/生物</a><a href="C-jysc.html">建筑/采挖/照明</a><a href="C-jysc.html">机械/加工/设备</a><a href="C-jysc.html">通讯/电子/数码</a><a href="C-jysc.html">服饰/日用/家电</a><a href="C-jysc.html">纺织/造纸/服装</a><a href="C-jysc.html">医疗/保健/美容</a><a href="C-jysc.html">能源/动力/电力</a></div>
+            </li>
+        </ul>
+    </div>
+    <div class="mid5right fr">
+        <h2>热门推荐</h2>
+        <ul>
+            <li class="clearfix">
+                <a href="tra_goods.html" class="mImg fl"><img src="images/hotpic1.jpg" /> </a>
+                <a href="tra_goods.html" class="mTxt fr">一种治疗畜禽类温热病的中药及其制备方法</a>
+            </li>
+            <li class="clearfix">
+                <a href="tra_goods.html" class="mImg fl"><img src="images/hotpic2.jpg" /> </a>
+                <a href="tra_goods.html" class="mTxt fr">一种治疗畜禽类温热病的中药及其制备方法</a>
+            </li>
+            <li class="clearfix">
+                <a href="tra_goods.html" class="mImg fl"><img src="images/hotpic3.jpg" /> </a>
+                <a href="tra_goods.html" class="mTxt fr">一种治疗畜禽类温热病的中药及其制备方法</a>
+            </li>
+            <li class="clearfix">
+                <a href="tra_goods.html" class="mImg fl"><img src="images/hotpic4.jpg" /> </a>
+                <a href="tra_goods.html" class="mTxt fr">一种治疗畜禽类温热病的中药及其制备方法</a>
+            </li>
+            <li class="clearfix">
+                <a href="tra_goods.html" class="mImg fl"><img src="images/hotpic5.jpg" /> </a>
+                <a href="tra_goods.html" class="mTxt fr">一种治疗畜禽类温热病的中药及其制备方法</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--mid5结束-->
+<!--mid5开始-->
+<div class="mid5 clearfix">
+    <div class="mid5left fl">
+        <img src="images/scpic2.jpg" />
+        <h2>服务市场</h2>
+        <p><a href="B-fwsc.html">进入服务市场 &gt;</a> </p>
+    </div>
+    <div class="mid6left2 fl">
+        <ul>
+            <li>
+                <div class="mid5Tit clearfix"><h2 class="fl">专利评议</h2><a href="#" class="fr">更多&gt;</a> </div>
+                <div class="mid5A"><a href="B-fwsc.html">专利风险评估</a><a href="B-fwsc.html">专利技术分析</a><a href="B-fwsc.html">行业分析</a><a href="B-fwsc.html">项目分析</a></div>
+            </li>
+            <li>
+                <div class="mid5Tit clearfix"><h2 class="fl">专利维权</h2><a href="#" class="fr">更多&gt;</a> </div>
+                <div class="mid5A"><a href="B-fwsc.html">行政诉讼</a><a href="B-fwsc.html">侵权纠纷</a><a href="B-fwsc.html">合同备案</a><a href="B-fwsc.html">法律咨询</a></div>
+            </li>
+            <li>
+                <div class="mid5Tit clearfix"><h2 class="fl">专利托管</h2><a href="#" class="fr">更多&gt;</a> </div>
+                <div class="mid5A"><a href="B-fwsc.html">专利布局/挖掘/预警分析</a><a href="B-fwsc.html">专利数据库建设</a><a href="B-fwsc.html">专利战略规划</a><a href="B-fwsc.html">资产管理运营</a><a href="B-fwsc.html">企业创新管理</a><a href="B-fwsc.html">商贸活动管理</a><a href="B-fwsc.html">著名商标和驰名商标认定</a></div>
+            </li>
+            <li>
+                <div class="mid5Tit clearfix"><h2 class="fl">专利代理</h2><a href="#" class="fr">更多&gt;</a> </div>
+                <div class="mid5A"><a href="B-fwsc.html">国内专利申请</a><a href="B-fwsc.html">发明专利优先审查</a><a href="B-fwsc.html">专利变更</a><a href="B-fwsc.html">专利许可</a><a href="B-fwsc.html">专利审查/无效</a><a href="B-fwsc.html">商标申请</a><a href="B-fwsc.html">商标国内注册</a></div>
+            </li>
+            <li>
+                <div class="mid5Tit clearfix"><h2 class="fl">政策应用</h2><a href="#" class="fr">更多&gt;</a> </div>
+                <div class="mid5A"><a href="B-fwsc.html">高薪企业认证申报及复审</a><a href="B-fwsc.html">科研项目申报</a><a href="B-fwsc.html">政府项目管理</a></div>
+            </li>
+            <li>
+                <div class="mid5Tit clearfix"><h2 class="fl">设计开发</h2><a href="#" class="fr">更多&gt;</a> </div>
+                <div class="mid5A"><a href="B-fwsc.html">工业设计</a><a href="B-fwsc.html">著作权</a><a href="B-fwsc.html"><a href="B-fwsc.html">系统开发</a></div>
+            </li>
+        </ul>
+    </div>
+    <div class="mid5right fr">
+        <h2>热门推荐</h2>
+        <ul>
+            <li class="clearfix">
+                <a href="ser_goods.html" class="mImg fl"><img src="images/hotpic6.jpg" /> </a>
+                <a href="ser_goods.html" class="mTxt fr">APP开发一站式外包服务</a>
+            </li>
+            <li class="clearfix">
+                <a href="ser_goods.html" class="mImg fl"><img src="images/hotpic7.jpg" /> </a>
+                <a href="ser_goods.html" class="mTxt fr">如何保持经济刺激政策的按时执行</a>
+            </li>
+            <li class="clearfix">
+                <a href="ser_goods.html" class="mImg fl"><img src="images/hotpic8.jpg" /> </a>
+                <a href="ser_goods.html" class="mTxt fr">企业战略规划</a>
+            </li>
+            <li class="clearfix">
+                <a href="ser_goods.html" class="mImg fl"><img src="images/hotpic9.jpg" /> </a>
+                <a href="ser_goods.html" class="mTxt fr">摄影作品专利保护</a>
+            </li>
+            <li class="clearfix">
+                <a href="ser_goods.html" class="mImg fl"><img src="images/hotpic10.jpg" /> </a>
+                <a href="ser_goods.html" class="mTxt fr">打造国内 O2O 知识产权新模式</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--mid5结束-->
+<!--mid6开始-->
+<div class="mid6">
+    <div class="mtitle clearfix">
+        <div class="mH2 fl"><em class="fl"></em><h2 class="fl">优质服务商推荐</h2></div>
+    </div>
+    <div class="mid6List">
+        <ul class="clearfix">
+            <li>
+                <a href="store_info.html" class="mid6Img"><img src="images/dtlogo1.jpg" /> </a>
+                <div class="mid6A">
+                    <a href="store_info.html" class="mid6Tit">华科专利中心</a>
+                    <p class="plstar"><span><img src="images/strart.jpg" /> </span><span><img src="images/strart.jpg" /> </span><span><img src="images/strart.jpg" /> </span><span><img src="images/strart.jpg" /> </span><span><img src="images/strart.jpg" /> </span></p>
+                    <p class="plstar2">好评率：100%</p>
+                </div>
+                <a href="store_info.html" class="mid6Btn">进入店铺</a>
+            </li>
+            <li>
+                <a href="store_info.html" class="mid6Img"><img src="images/dtlogo2.jpg" /> </a>
+                <div class="mid6A">
+                    <a href="store_info.html" class="mid6Tit">光荣网络</a>
+                    <p class="plstar"><span><img src="images/strart.jpg" /> </span><span><img src="images/strart.jpg" /> </span><span><img src="images/strart.jpg" /> </span><span><img src="images/strart.jpg" /> </span><span><img src="images/strart.jpg" /> </span></p>
+                    <p class="plstar2">好评率：100%</p>
+                </div>
+                <a href="store_info.html" class="mid6Btn">进入店铺</a>
+            </li>
+            <li>
+                <a href="store_info.html" class="mid6Img"><img src="images/dtlogo3.jpg" /> </a>
+                <div class="mid6A">
+                    <a href="store_info.html" class="mid6Tit">艺新专业商标设计</a>
+                    <p class="plstar"><span><img src="images/strart.jpg" /> </span><span><img src="images/strart.jpg" /> </span><span><img src="images/strart.jpg" /> </span><span><img src="images/strart.jpg" /> </span><span><img src="images/strart.jpg" /> </span></p>
+                    <p class="plstar2">好评率：100%</p>
+                </div>
+                <a href="store_info.html" class="mid6Btn">进入店铺</a>
+            </li>
+            <li>
+                <a href="store_info.html" class="mid6Img"><img src="images/dtlogo4.jpg" /> </a>
+                <div class="mid6A">
+                    <a href="store_info.html" class="mid6Tit">马德里商标国际注册</a>
+                    <p class="plstar"><span><img src="images/strart.jpg" /> </span><span><img src="images/strart.jpg" /> </span><span><img src="images/strart.jpg" /> </span><span><img src="images/strart.jpg" /> </span><span><img src="images/strart.jpg" /> </span></p>
+                    <p class="plstar2">好评率：100%</p>
+                </div>
+                <a href="store_info.html" class="mid6Btn">进入店铺</a>
+            </li>
+            <li>
+                <a href="store_info.html" class="mid6Img"><img src="images/dtlogo5.jpg" /> </a>
+                <div class="mid6A">
+                    <a href="store_info.html" class="mid6Tit">UICON专利服务中心</a>
+                    <p class="plstar"><span><img src="images/strart.jpg" /> </span><span><img src="images/strart.jpg" /> </span><span><img src="images/strart.jpg" /> </span><span><img src="images/strart.jpg" /> </span><span><img src="images/strart.jpg" /> </span></p>
+                    <p class="plstar2">好评率：100%</p>
+                </div>
+                <a href="store_info.html" class="mid6Btn">进入店铺</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--mid6结束-->
+<!--mid7开始-->
+<div class="mid7">
+    <div class="mid7Tit">合作伙伴</div>
+    <div class="flinkList">
+        <ul class="clearfix">
+            <li><a href="http://www.sipo.gov.cn/"><img src="images/hzlogo1_h.jpg" /><img src="images/hzlogo1_h1.jpg" style="display: none" /></a>  </li>
+            <li><a href="http://cpquery.sipo.gov.cn/"><img src="images/hzlogo2_h.jpg" /><img src="images/hzlogo2_h1.jpg" style="display: none"  /></a> </li>
+            <li><a href="http://www.saic.gov.cn/sbw1/sbcx/sbcx.html"><img src="images/hzlogo3_h.jpg" /><img src="images/hzlogo3_h1.jpg" style="display: none"  /></a> </li>
+            <li><a href="http://www2.soopat.com/Home/IIndex"><img src="images/hzlogo4_h.jpg" /><img src="images/hzlogo4_h1.jpg" style="display: none"  /></a> </li>
+            <li><a href="http://www.sipo.gov.cn/"><img src="images/hzlogo5_h.jpg" /><img src="images/hzlogo5_h1.jpg" style="display: none"  /></a> </li>
+            <li><a href="http://www.cnpatent.com/"><img src="images/hzlogo6_h.jpg" /><img src="images/hzlogo6_h1.jpg" style="display: none"  /></a> </li>
+        </ul>
+    </div>
+</div>
+<!--mid7结束-->
+<!--mid8开始-->
+<div class="mid8">
+    <div class="mid8Tit"><span>END</span></div>
+    <div class="mid8Area clearfix">
+        <div class="mid8Left fl">
+            <dl>
+                <dt>新手指南</dt>
+                <dd><a href="#">免费注册</a> </dd>
+                <dd><a href="#">购物流程</a> </dd>
+                <dd><a href="#">支付流程</a> </dd>
+            </dl>
+            <dl>
+                <dt>关于我们</dt>
+                <dd><a href="#">公司简介</a> </dd>
+                <dd><a href="#">联系我们</a> </dd>
+                <dd><a href="#">在线咨询</a> </dd>
+            </dl>
+            <dl>
+                <dt>服务指南</dt>
+                <dd><a href="#">交易条款</a> </dd>
+                <dd><a href="#">购物流程</a> </dd>
+                <dd><a href="#">促销咨询</a> </dd>
+            </dl>
+            <dl>
+                <dt>咨询工作</dt>
+                <dd><a href="#">政务工作</a> </dd>
+                <dd><a href="#">平台资讯</a> </dd>
+                <dd><a href="#">政策导读</a> </dd>
+            </dl>
+        </div>
+        <div class="mid8Right fr">
+            <img src="images/ecode.jpg"/>
+            <p>扫码关注微信公众号</p>
+        </div>
+    </div>
+</div>
+<!--mid8结束-->
+
+<!--footer开始-->
+<div class="footer">
+    <div class="footerMenu"><a href="#">关于我们</a><a href="#">帮助中心</a><a href="#">诚聘英才</a><a href="#">联系我们</a><a href="#">合作伙伴</a><a href="#">法律声明</a> </div>
+    <div class="aandc">地址：湖北省武汉市武昌区广八路8号 版权所有 湖北省知识产权局所有 武汉万类软件技术有限公司技术支持<br/>&copy; 2003-2016 TMALL.COM 版权所有</div>
+</div>
+<!--footer结束-->
+
+
+
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+<script type="text/javascript">
+
+</script>
+
+
+<!--[if IE 6]>
+<script type="text/javascript" src="js/DD_belatedPNG.js"></script>
+<script type="text/javascript">
+    DD_belatedPNG.fix(".");
+</script>
+<![Endif]-->
+</body>
+</html>
