@@ -135,6 +135,9 @@ $(function(){
             chk.checked = false;
         }
     });
+
+
+
     //蒙版层
     $(".sc").click(function () {
         $(".mbc").fadeIn();
@@ -176,51 +179,30 @@ $(function(){
         $(".dHideNav").hide();
     });
 
+//模仿下拉选择
+    $('.fbBxl').toggle(function () {
+        $(this).find("ul").stop(true,true).slideDown(400);
+        $(this).find("em").css("background","url('../images/images/fbBxlpic2.png') no-repeat left center")
+
+    },function () {
+        $(this).find("ul").stop(true,true).slideUp(250)
+        $(this).find("em").css("background","url('../images/images/fbBxlpic1.png') no-repeat left center")
+    });
+    $(document).click(function(){
+        $(".fbBxl").find("ul").hide();
+        $(".fbBxl").find("em").css("background","url('../images/images/fbBxlpic1.png') no-repeat left center")
+
+    });
+    $('.fbBxl ul li').click(function () {
+        $(this).parent().siblings('input').val($(this).text());
+    });
 
 
 
-});
-//倒计时
-$(function(){
-    show_time();
-});
 
-function show_time(){
-    var time_start =new Date().getTime(); //设定当前时间
-    var time_end =  new Date("2016/11/02 13:22:00").getTime(); //设定目标时间
-    // 计算时间差
-    var time_distance = time_end - time_start;
-    //天
-    var int_day = Math.floor(time_distance/86400000)
-    time_distance -= int_day * 86400000;
-    //时
-    var int_hour = Math.floor(time_distance/3600000)
-    time_distance -= int_hour * 3600000;
-    // 分
-    var int_minute = Math.floor(time_distance/60000)
-    time_distance -= int_minute * 60000;
-    // 秒
-    var int_second = Math.floor(time_distance/1000)
-    // 时分秒为单数时、前面加零
-    if(int_day < 10){
-        int_day = "  " + int_day;
-    }
-    if(int_hour < 10){
-        int_hour = "0" + int_hour;
-    }
-    if(int_minute < 10){
-        int_minute = "0" + int_minute;
-    }
-    if(int_second < 10){
-        int_second = "0" + int_second;
-    }
-    // 显示时间
-    $("#time_d").val(int_day);
-    $("#time_h").val(int_hour);
-    $("#time_m").val(int_minute);
-    $("#time_s").val(int_second);
-    // 设置定时器
-    setTimeout("show_time()",1000);
+
+
+
 
     //zmxjs
 
@@ -585,3 +567,47 @@ function show_time(){
 
 
 })
+
+
+//倒计时
+$(function(){
+    show_time();
+});
+
+function show_time(){
+    var time_start =new Date().getTime(); //设定当前时间
+    var time_end =  new Date("2016/11/02 13:22:00").getTime(); //设定目标时间
+    // 计算时间差
+    var time_distance = time_end - time_start;
+    //天
+    var int_day = Math.floor(time_distance/86400000)
+    time_distance -= int_day * 86400000;
+    //时
+    var int_hour = Math.floor(time_distance/3600000)
+    time_distance -= int_hour * 3600000;
+    // 分
+    var int_minute = Math.floor(time_distance/60000)
+    time_distance -= int_minute * 60000;
+    // 秒
+    var int_second = Math.floor(time_distance/1000)
+    // 时分秒为单数时、前面加零
+    if(int_day < 10){
+        int_day = "  " + int_day;
+    }
+    if(int_hour < 10){
+        int_hour = "0" + int_hour;
+    }
+    if(int_minute < 10){
+        int_minute = "0" + int_minute;
+    }
+    if(int_second < 10){
+        int_second = "0" + int_second;
+    }
+    // 显示时间
+    $("#time_d").val(int_day);
+    $("#time_h").val(int_hour);
+    $("#time_m").val(int_minute);
+    $("#time_s").val(int_second);
+    // 设置定时器
+    setTimeout("show_time()",1000);
+}
